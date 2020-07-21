@@ -12,7 +12,7 @@ Feature: User wants to check Google URL as GET
     * def urlGoogle = 'https://www.google.com'
 
 
-
+  @Smoke
   Scenario: Testing String Concat one
 
     Given def YouAre = 'Welcome '

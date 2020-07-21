@@ -1,0 +1,21 @@
+<testsuite failures="1" name="src/test/java/FeatureFiles/testnew.feature" skipped="0" tests="1" time="1.369349">
+  <testcase classname="src.test.java.FeatureFiles.testnew" name="Verify that a new employee is successfully getting created" time="1.369349">
+    <failure message="testnew.feature:15 - assert evaluated to false: responseStatus == 200">Given url 'http://dummy.restapiexample.com/api/v1/create' ................. passed
+* def JavaDemo = Java.type('supportingjson.jsonbody') ..................... passed
+* def result = JavaDemo.bodyis('Mit' , 200000 , 50) ....................... passed
+And request result ........................................................ passed
+And method post ........................................................... passed
+Then assert responseStatus == 200 ......................................... failed
+
+Stack Trace:
+com.intuit.karate.exception.KarateException: testnew.feature:15 - assert evaluated to false: responseStatus == 200
+	at ✽.Then assert responseStatus == 200 (testnew.feature:15)
+
+And assert responseTime &lt; 3000 ............................................ skipped
+And match responseType == 'json' .......................................... skipped
+And print 'Response is: ', response ....................................... skipped
+Then match response.data.name == 'Mit' .................................... skipped
+Then match response.data.name == '#notnull' ............................... skipped
+* def result = JavaDemo.writenotepad(response) ............................ skipped</failure>
+  </testcase>
+</testsuite>
